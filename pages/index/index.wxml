@@ -1,11 +1,13 @@
 <!--index.wxml-->
 <view class="box">
     <view class="output">
-        <text class="zore">
-            0
+        <text class="zore" v-model="res">
+            {{res}}
         </text>
     </view>
     <view class="calc_box">
-        <view class="calc_char" wx:for="{{items}}"><text class="calc_text">{{item}}</text></view>
+        <view bindtap="tap" class="calc_char" wx:for="{{items}}" id="{{item}}">
+            <text class="calc_text" id="{{item}}">{{item}}</text>
+        </view>
     </view>
 </view>
