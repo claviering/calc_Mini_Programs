@@ -1,5 +1,5 @@
 //index.js
-var math = require('./math.js')
+var math = require('./math.min.js')
 //获取应用实例
 const app = getApp()
 

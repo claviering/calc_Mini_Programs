@@ -37,6 +37,7 @@ page{
     float: left;
     font-size: 1.3em;
     color: rgb(89,93,102);
+    position: relative;
 }
 .calc_char:first-child{
     color:rgb(251,119,48);
@@ -51,4 +52,21 @@ page{
     align-items: center;
     justify-content: center;
     color: #FFF;
+}
+.calc_char:after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(235,235,235);
+}
+.calc_char:before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: auto;
+    height: 100%;
+    width: 1px;
+    background-color: rgb(235,235,235);
 }
