@@ -1,0 +1,54 @@
+page{
+    width: 100%;
+    height: 100%;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.output{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(241,243,243);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.zore{
+    margin-bottom: 10%;
+    margin-right: 5%;
+    font-weight: 100;
+    font-size: 3em;
+}
+
+.calc_box{
+    width: 100%;
+    height: 50%;
+}
+.calc_char{
+    width: 25%;
+    height: 20%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    font-size: 1.3em;
+    color: rgb(89,93,102);
+}
+.calc_char:first-child{
+    color:rgb(251,119,48);
+}
+
+.calc_char:nth-child(16){
+    background-color: rgb(251,119,48);
+    float: right;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+}

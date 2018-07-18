@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="box">
+    <view class="output">
+        <text class="zore">
+            0
+        </text>
+    </view>
+    <view class="calc_box">
+        <text class="calc_char" wx:for="{{items}}"><text class="calc_text">{{item}}</text></text>
+    </view>
+</view>
