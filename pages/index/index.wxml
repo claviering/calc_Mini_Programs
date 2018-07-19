@@ -1,22 +1,22 @@
 <!--index.wxml-->
 <view class="box">
-    <view class="icon iconfont icon-zhuanhuan" bindtap="tran_fun"></view>
+    <view class="icon iconfont icon-zhuanhuan" bindtap="change_mode"></view>
     <view class="output">
         <text class="zore_{{tran[index]}}" v-model="res">{{res}}</text>
     </view>
     <view class="num_box">
         <view class="calc_box_{{tran[index]}}">
-            <view bindtap="tap" class="calc_char" wx:for="{{items}}" id="{{item}}">
+            <view bindtap="calc" class="calc_char" wx:for="{{items}}" id="{{item}}">
                 <text class="calc_text" id="{{item}}">{{item}}</text>
             </view>
         </view>
         <view class="more_items_one" wx:if="{{tran_flag}}">
-            <view bindtap="tap" class="more_calc_char1" wx:for="{{more_items_1}}" id="{{item}}">
+            <view bindtap="calc" class="more_calc_char1" wx:for="{{more_items_1}}" id="{{item}}">
                 <text class="calc_text" id="{{item}}">{{item}}</text>
             </view>
         </view>
         <view class="more_items_two" wx:if="{{tran_flag}}">
-            <view bindtap="tap" class="more_calc_char2" wx:for="{{more_items_2}}" id="{{item}}">
+            <view bindtap="calc" class="more_calc_char2" wx:for="{{more_items_2}}" id="{{item}}">
                 <text class="calc_text" id="{{item}}">{{item}}</text>
             </view>
         </view>
