@@ -7,8 +7,13 @@ const app = getApp()
 Page({
   data: {
     items:["AC","Del","/","*","7","8","9","-","4","5","6","+","1","2","3","=","%","0","."],
+    more_items_1:["2nd","deg","sin","cos","tan","^","lg","ln","(",")"],
+    more_items_2:["sqr","!","1/X","PI","e"],
     str:"",
     res:"0",
+    tran:["big","small"],
+    tran_flag:0,
+    index:0
   },
   tap: function(e){
     var ch = e.target.id;
@@ -41,5 +46,10 @@ Page({
   },
   change:function(str){
     this.setData({res:str})
+  },
+  tran_fun:function(){
+    this.setData({tran_flag:!this.data.tran_flag});
+    var tran_index = this.data.tran_flag ? 1 : 0;
+    this.setData({index:tran_index});
   }
 })
