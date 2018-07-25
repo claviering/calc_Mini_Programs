@@ -52,6 +52,9 @@ page{
     align-items: flex-end;
     position: relative;
 }
+#calcBox{
+    transition: 0.5s;
+}
 .calc_box_big{
     width: 100%;
     height: 100%;

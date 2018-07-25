@@ -5,7 +5,7 @@
         <text class="zore_{{tran[index]}}" v-model="res">{{res}}</text>
     </view>
     <view class="num_box">
-        <view class="calc_box_{{tran[index]}}">
+        <view class="calc_box_{{tran[index]}}" id="calcBox">
             <view bindtap="calc" class="calc_char" wx:for="{{items}}" id="{{item}}">
                 <text class="calc_text" id="{{item}}">{{item}}</text>
             </view>
